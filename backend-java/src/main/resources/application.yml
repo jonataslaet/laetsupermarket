@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/Raro_Geek_development?useTimezone=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: laet
+    password: laet273
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+      show-sql: false
+  flyway:
+    baselineOnMigrate: true
